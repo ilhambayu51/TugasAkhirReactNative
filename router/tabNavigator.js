@@ -4,12 +4,7 @@ import {View} from 'react-native';
 import {createBottomTabNavigator, createAppContainer} from 'react-navigation';
 import {createMaterialBottomTabNavigator} from 'react-navigation-material-bottom-tabs';
 import Icon from 'react-native-vector-icons/FontAwesome5';
-import {
-  HomeStack,
-  ProfilStack,
-  MateriStack,
-  SoalStack,
-} from './router/stackNavigator';
+import {HomeStack, ProfilStack, MateriStack, SoalStack} from './stackNavigator';
 
 const TabNavigator = createMaterialBottomTabNavigator(
   {

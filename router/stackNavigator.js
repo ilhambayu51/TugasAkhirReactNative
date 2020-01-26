@@ -4,6 +4,8 @@ import Profil from '../view/ProfilScreen';
 import Materi from '../view/Materi';
 import Soal from '../view/Soal';
 import Pengertian from '../view/Pengertian';
+import Aliran from '../view/Aliran';
+import Unsur from '../view/Unsur';
 
 export const ProfilStack = createStackNavigator({
   Profil: {
@@ -30,13 +32,22 @@ export const MateriStack = createStackNavigator({
       tabBarVisible: true,
     },
   },
-});
-
-export const PengertianStack = createStackNavigator({
+  Unsur: {
+    screen: Unsur,
+    navigationOptions: {
+      tabBarVisible: null,
+    },
+  },
+  Aliran: {
+    screen: Aliran,
+    navigationOptions: {
+      tabBarVisible: null,
+    },
+  },
   Pengertian: {
     screen: Pengertian,
     navigationOptions: {
-      header: null,
+      tabBarVisible: null,
     },
   },
 });
