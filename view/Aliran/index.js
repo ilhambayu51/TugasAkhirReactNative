@@ -12,7 +12,10 @@ export default class Aliran extends Component {
         <Text style={Styles.title} onPress={this._onPressButton}>
           1. Klasisme
         </Text>
-        <Image />
+        <Image
+          source={require('../../assets/aliran/klasisme.jpg')}
+          style={Styles.img}
+        />
         <Text style={Styles.content}>
           Aliran Klasisme ini adalah bercorak klasik Yunani dan Romawi dengan
           wujud gambar yang realistis. Bumbu-bumbu realistis ini adalah wujud
@@ -20,7 +23,10 @@ export default class Aliran extends Component {
           dunia nyata.
         </Text>
         <Text style={Styles.title}>2. Romantisme</Text>
-        <Image />
+        <Image
+          source={require('../../assets/aliran/romantisme.jpg')}
+          style={Styles.img}
+        />
         <Text style={Styles.content}>
           Aliran ini berusaha untuk menunjukkan lukisan dengan fantastis dan
           nuansa keindahan serta ketenangan. Penggunaan aliran ini untuk
@@ -33,7 +39,10 @@ export default class Aliran extends Component {
           Raden Saleh, dan Jean Baptiste.
         </Text>
         <Text style={Styles.title}>3. Realisme</Text>
-        <Image />
+        <Image
+          source={require('../../assets/aliran/realisme.jpg')}
+          style={Styles.img}
+        />
         <Text style={Styles.content}>
           Aliran realisme merupakan aliran seni lukis yang menyampaikan karya
           seni lukis dengan apa adanya di dalam kehidupan nyata. Aliran ini
@@ -44,7 +53,10 @@ export default class Aliran extends Component {
           Honore Umier, serta Fransisco de Goya.
         </Text>
         <Text style={Styles.title}>4. Naturalisme</Text>
-        <Image />
+        <Image
+          source={require('../../assets/aliran/naturalisme.jpg')}
+          style={Styles.img}
+        />
         <Text style={Styles.content}>
           Aliran naturalistik merupakan aliran yang menampilkan gambaran objek
           alami. Ada sedikit persamaan dengan realisme, hanya saja pada aliran
@@ -57,7 +69,10 @@ export default class Aliran extends Component {
           Trubus, dan sebagainya.
         </Text>
         <Text style={Styles.title}>5. Ekspresionisme</Text>
-        <Image />
+        <Image
+          source={require('../../assets/aliran/ekspresionisme.jpg')}
+          style={Styles.img}
+        />
         <Text style={Styles.content}>
           Seni lukis aliran ekspresionisme memberi kebebasan pada distorsi warna
           dan bentuk untuk membuat emosi dari berbagai kejadian untuk
@@ -68,7 +83,10 @@ export default class Aliran extends Component {
           Iskandar.
         </Text>
         <Text style={Styles.title}>6. Surealisme</Text>
-        <Image />
+        <Image
+          source={require('../../assets/aliran/gonconda_rene.jpg')}
+          style={Styles.img}
+        />
         <Text style={Styles.content}>
           Aliran surealisme berarti aliran yang sangat dekat dan erat dengan
           dunia fantasi atau imajinasi. Penampilannya seolah ada di alam mimpi.
@@ -79,7 +97,10 @@ export default class Aliran extends Component {
           Rahman dan Sudiarjo.
         </Text>
         <Text style={Styles.title}>7. Abstraksionisme</Text>
-        <Image />
+        <Image
+          source={require('../../assets/aliran/small_flies.jpg')}
+          style={Styles.img}
+        />
         <Text style={Styles.content}>
           Jenis aliran abstrak merupakan lukisan dengan bentuk penyampaian makna
           secara tidak langsung. Aliran ini tidak menggambarkan obyek dalam
@@ -92,7 +113,10 @@ export default class Aliran extends Component {
           dan Robert Montherwell.
         </Text>
         <Text style={Styles.title}>8. Gotik</Text>
-        <Image />
+        <Image
+          source={require('../../assets/aliran/gotik.jpg')}
+          style={Styles.img}
+        />
         <Text style={Styles.content}>
           Aliran seni lukis ini menekankan obyek berupa tokoh-tokoh suci, raja,
           ratu, tempat ibadah, istana, atau obyek-obyek lain yang berhubungan
@@ -100,7 +124,10 @@ export default class Aliran extends Component {
           dan warna yang dipertegas.
         </Text>
         <Text style={Styles.title}>9. Futurisme</Text>
-        <Image />
+        <Image
+          source={require('../../assets/aliran/futurisme.jpg')}
+          style={Styles.img}
+        />
         <Text style={Styles.content}>
           Aliran ini cenderung menekankan pada gerak yang indah dan
           memperlihatkan obyek lukisan yang digambar seakan-akan bergerak. Unsur
@@ -108,7 +135,10 @@ export default class Aliran extends Component {
           kesamaan waktu yang kuat.
         </Text>
         <Text style={Styles.title}>10. Konstruktivisme</Text>
-        <Image />
+        <Image
+          source={require('../../assets/aliran/konstruktivisme.jpg')}
+          style={Styles.img}
+        />
         <Text style={Styles.content}>
           Jenis aliran konstruktivisme adalah aliran yang melukiskan wujud
           konstruksi bangunan disertai dengan penekanan fokus pada sebuah
@@ -116,7 +146,10 @@ export default class Aliran extends Component {
           modern, atau bangunan yang lain.
         </Text>
         <Text style={Styles.title}>11. Impresionisme</Text>
-        <Image />
+        <Image
+          source={require('../../assets/aliran/impresionisme.jpg')}
+          style={Styles.img}
+        />
         <Text style={Styles.content}>
           Seni lukis beraliran Impresionisme berusaha untuk menampilkan kesan
           atau pesan yang dapat ditangkap objek, biasanya dalam penggambarannya
@@ -131,7 +164,10 @@ export default class Aliran extends Component {
           dan Mary Cassat.
         </Text>
         <Text style={Styles.title}>12. Kubisme</Text>
-        <Image />
+        <Image
+          source={require('../../assets/aliran/kubisme.jpg')}
+          style={Styles.img}
+        />
         <Text style={Styles.content}>
           Lukisan yang dihasilkan oleh aliran kubisme cukup unik. Pasalnya,
           aliran ini mempunyai bentuk geometris seperti lingkaran, segitiga,
@@ -143,7 +179,10 @@ export default class Aliran extends Component {
           Gezanne.
         </Text>
         <Text style={Styles.title}>13. Dadaisme</Text>
-        <Image />
+        <Image
+          source={require('../../assets/aliran/dadaisme.jpg')}
+          style={Styles.img}
+        />
         <Text style={Styles.content}>
           Aliran ini menyampaikan seni artistik dengan bentuk yang mengerikan,
           aneh, menyeramkan, magis, tapi kekanak-kanakan. Ciri-ciri dari lukisan
