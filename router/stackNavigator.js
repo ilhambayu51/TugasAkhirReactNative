@@ -8,10 +8,9 @@ import Aliran from '../view/Aliran';
 import Unsur from '../view/Unsur';
 import Sejarah from '../view/Sejarah';
 import Fungsi from '../view/Fungsi';
-import Alat from '../view/Alat';
-import Bahan from '../view/Bahan';
 import Medium from '../view/Medium';
 import Teknik from '../view/Teknik';
+import Latihan from '../view/Latihan';
 
 export const ProfilStack = createStackNavigator({
   Profil: {
@@ -27,6 +26,12 @@ export const SoalStack = createStackNavigator({
     screen: Soal,
     navigationOptions: {
       tabBarVisible: true,
+    },
+  },
+  Latihan: {
+    screen: Latihan,
+    navigationOption: {
+      header: true,
     },
   },
 });
@@ -64,18 +69,6 @@ export const MateriStack = createStackNavigator({
   },
   Fungsi: {
     screen: Fungsi,
-    navigationOptions: {
-      tabBarVisible: null,
-    },
-  },
-  Alat: {
-    screen: Alat,
-    navigationOptions: {
-      tabBarVisible: null,
-    },
-  },
-  Bahan: {
-    screen: Bahan,
     navigationOptions: {
       tabBarVisible: null,
     },

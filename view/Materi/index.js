@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {View, Text, ScrollView, TouchableOpacity} from 'react-native';
+import {View, Text, ScrollView, TouchableOpacity, Image} from 'react-native';
 import styles from './styles';
 
 export default class Materi extends Component {
@@ -19,15 +19,9 @@ export default class Materi extends Component {
     this.props.navigation.navigate('Fungsi');
   };
   _onPressButton6 = () => {
-    this.props.navigation.navigate('Alat');
-  };
-  _onPressButton7 = () => {
-    this.props.navigation.navigate('Bahan');
-  };
-  _onPressButton8 = () => {
     this.props.navigation.navigate('Medium');
   };
-  _onPressButton9 = () => {
+  _onPressButton7 = () => {
     this.props.navigation.navigate('Teknik');
   };
   render() {
@@ -37,47 +31,58 @@ export default class Materi extends Component {
           <TouchableOpacity
             style={styles.touchable}
             onPress={this._onPressButton2}>
-            <Text style={styles.text}>Pengertian</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={styles.touchable}
-            onPress={this._onPressButton}>
-            <Text style={styles.text}>Aliran</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={styles.touchable}
-            onPress={this._onPressButton3}>
-            <Text style={styles.text}>Unsur</Text>
+            <Image
+              source={require('../../assets/listmateri/pengertian2.png')}
+              style={styles.image}
+            />
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.touchable}
             onPress={this._onPressButton4}>
-            <Text style={styles.text}>Sejarah</Text>
+            <Image
+              source={require('../../assets/listmateri/sejarah.png')}
+              style={styles.image}
+            />
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.touchable}
+            onPress={this._onPressButton}>
+            <Image
+              source={require('../../assets/listmateri/jenis2.png')}
+              style={styles.image}
+            />
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.touchable}
+            onPress={this._onPressButton3}>
+            <Image
+              source={require('../../assets/listmateri/unsur.png')}
+              style={styles.image}
+            />
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.touchable}
             onPress={this._onPressButton5}>
-            <Text style={styles.text}>Fungsi</Text>
+            <Image
+              source={require('../../assets/listmateri/fungsi.png')}
+              style={styles.image}
+            />
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.touchable}
             onPress={this._onPressButton6}>
-            <Text style={styles.text}>Alat</Text>
+            <Image
+              source={require('../../assets/listmateri/medium.png')}
+              style={styles.image}
+            />
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.touchable}
             onPress={this._onPressButton7}>
-            <Text style={styles.text}>Bahan</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={styles.touchable}
-            onPress={this._onPressButton8}>
-            <Text style={styles.text}>Medium</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={styles.touchable}
-            onPress={this._onPressButton9}>
-            <Text style={styles.text}>Teknik</Text>
+            <Image
+              source={require('../../assets/listmateri/teknik.png')}
+              style={styles.image}
+            />
           </TouchableOpacity>
         </ScrollView>
       </View>
