@@ -21,7 +21,7 @@ export default class Home extends Component {
   };
   render() {
     return (
-      <ScrollView>
+      <ScrollView style={{backgroundColor: '#ffffff'}}>
         <View style={{marginTop: '5%'}}>
           <Text style={styles.textstyles}> Selamat Datang Farah</Text>
           <Text style={styles.textstyles2}>
@@ -56,10 +56,16 @@ export default class Home extends Component {
           <ScrollView horizontal={true}>
             <Image
               source={require('../../assets/images/Frame6.png')}
-              style={styles.Image3}
+              style={styles.image3}
             />
-            <Image source={require('../../assets/images/Frame7.png')} />
-            <Image source={require('../../assets/images/Frame8.png')} />
+            <Image
+              source={require('../../assets/images/Frame7.png')}
+              style={styles.image3}
+            />
+            <Image
+              source={require('../../assets/images/Frame8.png')}
+              style={styles.image3}
+            />
           </ScrollView>
         </View>
         <View style={styles.border} />

@@ -9,15 +9,10 @@ const styles = StyleSheet.create({
   },
   content: {
     fontSize: 17,
-    marginLeft: 15,
+    marginLeft: 25,
     marginRight: 20,
     textAlign: 'justify',
     color: '#758195',
-  },
-  img: {
-    width: 280,
-    height: 220,
-    margin: 15,
   },
 });
 export default styles;

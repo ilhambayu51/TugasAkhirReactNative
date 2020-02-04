@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-inline-styles */
 import React, {Component} from 'react';
 import {ScrollView, Text} from 'react-native';
 import Styles from './styles';
@@ -5,7 +6,7 @@ import Styles from './styles';
 export default class Pengertian extends Component {
   render() {
     return (
-      <ScrollView>
+      <ScrollView style={{backgroundColor: '#ffffff'}}>
         <Text style={Styles.content3}>
           Menurut Wikipedia, seni lukis merupakan salah satu cabang seni rupa.
           Dasar pengertiannya sama, yaitu sebuah pengembangan yang lebih utuh

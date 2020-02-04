@@ -70,8 +70,9 @@ const styles = StyleSheet.create({
     marginLeft: '3%',
   },
   image3: {
-    width: 10,
-    height: 80,
+    width: 200,
+    height: 85,
+    borderRadius: 10,
   },
   card1: {
     alignItems: 'center',

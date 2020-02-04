@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-inline-styles */
 import React, {Component} from 'react';
 import {ScrollView, Text, Image} from 'react-native';
 import Styles from './styles';
@@ -8,7 +9,7 @@ export default class Aliran extends Component {
   };
   render() {
     return (
-      <ScrollView>
+      <ScrollView style={{backgroundColor: '#ffffff'}}>
         <Text style={Styles.title} onPress={this._onPressButton}>
           1. Klasisme
         </Text>

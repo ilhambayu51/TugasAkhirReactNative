@@ -13,7 +13,8 @@ const styles = StyleSheet.create({
   },
   container: {
     alignItems: 'center',
-    backgroundColor: '#fff',
+    backgroundColor: '#ffffff',
+    height: '100%',
   },
   text: {
     fontSize: 22,
