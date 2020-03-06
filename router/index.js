@@ -1,6 +1,12 @@
 import {createAppContainer, createSwitchNavigator} from 'react-navigation';
-import {ProfilStack, HomeStack, MateriStack, SoalStack} from './stackNavigator';
-import App from './tabNavigator';
+import {
+  ProfilStack,
+  HomeStack,
+  MateriStack,
+  SoalStack,
+  LoginStack,
+} from './stackNavigator';
+import {App} from './tabNavigator';
 
 export default createAppContainer(
   createSwitchNavigator(
@@ -10,7 +16,8 @@ export default createAppContainer(
       Materi: MateriStack,
       Soal: SoalStack,
       App: App,
+      Login: LoginStack,
     },
-    {initialRouteName: 'Home'},
+    {initialRouteName: 'Login'},
   ),
 );

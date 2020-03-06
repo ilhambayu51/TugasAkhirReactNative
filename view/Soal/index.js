@@ -7,6 +7,9 @@ export default class Soal extends Component {
   _onPressButton = () => {
     this.props.navigation.navigate('Latihan');
   };
+  _onPressButton2 = () => {
+    this.props.navigation.navigate('Ujian');
+  };
   render() {
     return (
       <View style={styles.container}>
@@ -19,7 +22,9 @@ export default class Soal extends Component {
               style={styles.Image}
             />
           </TouchableOpacity>
-          <TouchableOpacity style={styles.touchable}>
+          <TouchableOpacity
+            style={styles.touchable}
+            onPress={this._onPressButton2}>
             <Image
               source={require('../../assets/images/Ujian.png')}
               style={styles.Image}

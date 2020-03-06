@@ -3,9 +3,9 @@ import {StyleSheet} from 'react-native';
 const styles = StyleSheet.create({
   touchable: {
     width: 360,
-    height: 165,
+    height: 155,
     flex: 1,
-    marginTop: 30,
+    marginTop: 20,
     justifyContent: 'center',
     backgroundColor: '#C4C4C4',
     alignItems: 'center',
@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
   Image: {
     alignItems: 'center',
     width: 360,
-    height: 165,
+    height: 155,
     borderRadius: 10,
   },
 });

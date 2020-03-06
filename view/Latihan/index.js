@@ -1,8 +1,20 @@
+/* eslint-disable eqeqeq */
 import React, {Component} from 'react';
-import {View, Text, TouchableOpacity, Button} from 'react-native';
+import {View, Text, TouchableOpacity} from 'react-native';
+import {Button} from 'native-base';
 import styles from './styles';
 
-export default class Latihan extends Component {
+export default class Ujian extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      savedAnswer: '',
+      answers: ['manuk', 'menclok', 'nang', 'katok'],
+    };
+  }
+  _checkAnswer(data) {
+    this.setState({savedAnswer: data});
+  }
   render() {
     return (
       <View style={styles.View}>
@@ -11,21 +23,27 @@ export default class Latihan extends Component {
           jasmani dan mempunyai daya yang bisa membangkitkan jiwa. Adalah
           perngertian dari
         </Text>
-        <View style={styles.view1}>
-          <TouchableOpacity style={styles.choice}>
-            <Text style={styles.text1}>Soedarso SP</Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.choice}>
-            <Text style={styles.text1}>Soni Ade & Imam R</Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.choice}>
-            <Text style={styles.text1}>Jim Supangat</Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.choice}>
-            <Text style={styles.text1}>Herbert Read</Text>
-          </TouchableOpacity>
+        {this.state.answers.map(data => (
+          <View style={styles.answerContainer}>
+            <TouchableOpacity
+              style={
+                data == this.state.savedAnswer
+                  ? styles.choicePressed
+                  : styles.choice
+              }
+              onPress={() => this._checkAnswer(data)}>
+              <Text style={styles.text3}>{data}</Text>
+            </TouchableOpacity>
+          </View>
+        ))}
+        <View style={styles.view2}>
+          <Button style={styles.Button}>
+            <Text style={styles.text2}>Kembali</Text>
+          </Button>
+          <Button style={styles.Button}>
+            <Text style={styles.text2}>Lanjut</Text>
+          </Button>
         </View>
-        <Button title="Lanjut" color="#e2e2e2" />
       </View>
     );
   }

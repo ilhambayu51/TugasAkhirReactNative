@@ -3,6 +3,12 @@ import {View, Text, Image, TouchableOpacity} from 'react-native';
 import styles from '../ProfilScreen/styles';
 
 export default class Home extends Component {
+  _OnPress = () => {
+    this.props.navigation.navigate('About');
+  };
+  _OnPress2 = () => {
+    this.props.navigation.navigate('Contact');
+  };
   render() {
     return (
       <View>
@@ -18,11 +24,15 @@ export default class Home extends Component {
           <Text style={styles.text1}>Farah Luthfiyani</Text>
           <Text style={styles.text2}>farahluth@gmail.com</Text>
         </View>
-        <TouchableOpacity style={styles.view2}>
-          <Text style={styles.text3}>About</Text>
-        </TouchableOpacity>
+        <View style={styles.view2}>
+          <Text style={styles.text3} onPress={this._OnPress}>
+            Tentang Aplikasi
+          </Text>
+          <View style={styles.border} />
+          <Text style={styles.text3} onPress={this._OnPress2}>Kontak Kami</Text>
+        </View>
         <TouchableOpacity style={styles.view3}>
-          <Text style={styles.text3}>Log out</Text>
+          <Text style={styles.text3}>Keluar</Text>
         </TouchableOpacity>
         <Image
           source={require('../../assets/images/Frame9.png')}

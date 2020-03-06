@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {View, Text, ScrollView, TouchableOpacity, Image} from 'react-native';
+import {View, ScrollView, TouchableOpacity, Image} from 'react-native';
 import styles from './styles';
 
 export default class Materi extends Component {

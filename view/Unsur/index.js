@@ -12,10 +12,10 @@ export default class Unsur extends Component {
           Unsur yang mendukung seni lukis adalah unsur visual dan unsur non
           visual. Unsur visual adalah unsur yang mengandung material visual
           serta bisa dilihat maupun dibuat oleh sang pelukis sesuai dengan
-          keinginannya. Unsur visual bisa dipelajari. Nah, bentuk dari unsur
-          visual itu sendiri adalah:
+          keinginannya.
         </Text>
-        <Text style={styles.title}>a. Line atau garis</Text>
+        <Text style={styles.title}>Unsur visual terdiri dari :</Text>
+        <Text style={styles.title2}>a. Line atau garis</Text>
         <Text style={styles.content}>
           elemen ini adalah elemen dasar dimana garis dapat dibentuk dari dua
           titik berjauhan serta diisikan gambar maupun diberi gambar diantara
@@ -25,20 +25,20 @@ export default class Unsur extends Component {
           pantai, gunung, langit, atau laut. Sedangkan garis buatan seperti
           kontur wajah, bentuk bujur sangkar sebuah rumah, dan sebagainya.
         </Text>
-        <Text style={styles.title}>b. Field atau bidang</Text>
+        <Text style={styles.title2}>b. Field atau bidang</Text>
         <Text style={styles.content}>
           elemen ini menggunakan lebih dari dua sisi dengan sisi lebar dan
           panjang. Bentuknya dianggap sebagai teknik dasar bagi pelukis yang
           ingin membuat objeknya terlihat lebih hidup.
         </Text>
-        <Text style={styles.title}>c. Space atau ruang</Text>
+        <Text style={styles.title2}>c. Space atau ruang</Text>
         <Text style={styles.content}>
           elemen space adalah yang tertinggi pada teknik pelukisan. Ruang akan
           memberi kesan hidup pada objek lukisan. Ruang akan memperlihatkan sisi
           ataupun ruang hampa. Ruang dapat digunakan sebagai gambar objek alam,
           benda timbul, ataupun benda lain yang memiliki 3 atau 4 dimensi.
         </Text>
-        <Text style={styles.title}>d. Color atau warna</Text>
+        <Text style={styles.title2}>d. Color atau warna</Text>
         <Text style={styles.content}>
           ada beberapa jenis warna dalam teknik seni lukis, yaitu warna primer
           (warna dasar) meliputi putih, biru, dan merah. Sedangkan warna
@@ -50,9 +50,10 @@ export default class Unsur extends Component {
 
         <Text style={styles.content}>
           Selain unsur visual ada juga unsur non visual. Unsur ini merupakan
-          pengembangan dari seorang pelukis. Unsur non visual terdiri dari:
+          pengembangan dari seorang pelukis.
         </Text>
-        <Text style={styles.title}>a. Pandangan hidup serta pengalaman</Text>
+        <Text style={styles.title}> Unsur non visual terdiri dari :</Text>
+        <Text style={styles.title2}>a. Pandangan hidup serta pengalaman</Text>
         <Text style={styles.content}>
           meskipun ada dalam satu aliran, tapi terkadang cara penggambarannya
           berbeda. hal ini dikarenakan pandangan hidup dari pelukis itu serta
@@ -60,7 +61,7 @@ export default class Unsur extends Component {
           dua orang yang berbeda. sebab, ada banyak sisi yang bisa digunakan
           untuk menggambarkannya.
         </Text>
-        <Text style={styles.title}>b. Imajinasi</Text>
+        <Text style={styles.title2}>b. Imajinasi</Text>
         <Text style={styles.content}>
           lukis adalah gambar yang direalisasikan dalam media yang lebih kecil.
           Tidak hanya objek saja yang dibutuhkan, tetapi imajinasi. Setiap orang
@@ -70,14 +71,14 @@ export default class Unsur extends Component {
           hal yang penting serta mahal jika sudah ditumpahkan dalam sebuah
           lukisan.
         </Text>
-        <Text style={styles.title}>c. Sikap artistik dan estetik</Text>
+        <Text style={styles.title2}>c. Sikap artistik dan estetik</Text>
         <Text style={styles.content}>
           sikap ini tidak dimiliki oleh semua orang. sebab, seni akan bernilai
           jika sudah menjadi sebuah karya. Beberapa pelukis terkadang tidak
           dikagumi karyanya karena tidak disertai dengan pandangan yang
           menunjukkan bahwa seni itu indah.
         </Text>
-        <Text style={styles.title}>d. Konsep lukisan</Text>
+        <Text style={styles.title2}>d. Konsep lukisan</Text>
         <Text style={styles.content}>
           konsep adalah sketsa awal atau bisa dibilang sebagai peta awal ketika
           akan menggambarkan lukisan dalam media lukis. Ada beberapa pelukis

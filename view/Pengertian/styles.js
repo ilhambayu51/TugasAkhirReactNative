@@ -4,7 +4,13 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 18,
     fontWeight: 'bold',
-    marginLeft: 10,
+    marginLeft: 16,
+  },
+  title2: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    marginLeft: 16,
+    marginTop: -15,
   },
   content: {
     fontSize: 17,

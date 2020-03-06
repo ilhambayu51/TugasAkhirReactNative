@@ -23,8 +23,8 @@ export default class Home extends Component {
     return (
       <ScrollView style={{backgroundColor: '#ffffff'}}>
         <View style={{marginTop: '5%'}}>
-          <Text style={styles.textstyles}> Selamat Datang Farah</Text>
-          <Text style={styles.textstyles2}>
+          <Text style={styles.textstyles5}> Selamat Datang Farah</Text>
+          <Text style={styles.textstyles6}>
             Yuk belajar seni lukis lebih dalam
           </Text>
         </View>
@@ -43,14 +43,19 @@ export default class Home extends Component {
             Lihat Semua
           </Text>
         </View>
-        <Text style={{marginLeft: '7%', marginTop: '-3%', fontSize: 15}}>
+        <Text
+          style={{
+            marginLeft: '7%',
+            marginTop: '-3%',
+            fontSize: 15,
+            marginBottom: '1%',
+          }}>
           Belajar Seni Lukis Lebih Mendalam
         </Text>
         <View
           style={{
             marginLeft: '6.5%',
             marginTop: '3%',
-            height: 90,
             marginBottom: '-2%',
           }}>
           <ScrollView horizontal={true}>
@@ -64,6 +69,22 @@ export default class Home extends Component {
             />
             <Image
               source={require('../../assets/images/Frame8.png')}
+              style={styles.image3}
+            />
+            <Image
+              source={require('../../assets/listmateri/fungsi.png')}
+              style={styles.image3}
+            />
+            <Image
+              source={require('../../assets/listmateri/sejarah.png')}
+              style={styles.image3}
+            />
+            <Image
+              source={require('../../assets/listmateri/teknik.png')}
+              style={styles.image3}
+            />
+            <Image
+              source={require('../../assets/listmateri/unsur.png')}
               style={styles.image3}
             />
           </ScrollView>

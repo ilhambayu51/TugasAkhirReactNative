@@ -52,7 +52,7 @@ export default class Medium extends Component {
         />
         <Text style={styles.subtitle}>c. Cat Poster </Text>
         <Image
-          source={require('../../assets/cat/catPoster.jpeg')}
+          source={require('../../assets/cat/catPoster.jpg')}
           style={styles.img1}
         />
         <Text style={styles.subtitle}>d. Tinta Bak </Text>

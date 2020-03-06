@@ -1,68 +1,40 @@
-/* eslint-disable no-unused-vars */
-import React from 'react';
-import {View} from 'react-native';
-import {createBottomTabNavigator, createAppContainer} from 'react-navigation';
-import {createMaterialBottomTabNavigator} from 'react-navigation-material-bottom-tabs';
-import Icon from 'react-native-vector-icons/FontAwesome5';
-import {HomeStack, ProfilStack, MateriStack, SoalStack} from './stackNavigator';
+/* eslint-disable react-native/no-inline-styles */
+import * as React from 'react';
+import {Text, View} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
-const TabNavigator = createMaterialBottomTabNavigator(
-  {
-    Home: {
-      screen: HomeStack,
-      navigationOptions: {
-        tabBarLabel: 'Home',
-        tabBarIcon: ({tintColor}) => (
-          <View>
-            <Icon style={[{color: tintColor}]} size={25} name={'home'} />
-          </View>
-        ),
-      },
-    },
-    Materi: {
-      screen: MateriStack,
-      navigationOptions: {
-        tabBarLabel: 'Materi',
-        tabBarIcon: ({tintColor}) => (
-          <View>
-            <Icon style={[{color: tintColor}]} size={25} name={'file-alt'} />
-          </View>
-        ),
-      },
-    },
-    Soal: {
-      screen: SoalStack,
-      navigationOptions: {
-        tabBarLabel: 'Soal',
-        tabBarIcon: ({tintColor}) => (
-          <View>
-            <Icon
-              style={[{color: tintColor}]}
-              size={25}
-              name={'clipboard-list'}
-            />
-          </View>
-        ),
-      },
-    },
-    Profile: {
-      screen: ProfilStack,
-      navigationOptions: {
-        tabBarLabel: 'Profil',
-        tabBarIcon: ({tintColor}) => (
-          <View>
-            <Icon style={[{color: tintColor}]} size={25} name={'user-alt'} />
-          </View>
-        ),
-      },
-    },
-  },
-  {
-    initialRouteName: 'Home',
-    activeColor: '#82D6EE',
-    inactiveColor: '#d2d2d2',
-    barStyle: {backgroundColor: '#fff'},
-  },
-);
+function HomeScreen() {
+  return (
+    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+      <Text>Home!</Text>
+    </View>
+  );
+}
 
-export default createAppContainer(TabNavigator);
+function SettingsScreen() {
+  return (
+    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+      <Text>Settings!</Text>
+    </View>
+  );
+}
+
+const Tab = createBottomTabNavigator();
+
+function MyTabs() {
+  return (
+    <Tab.Navigator>
+      <Tab.Screen name="Home" component={HomeScreen} />
+      <Tab.Screen name="Settings" component={SettingsScreen} />
+    </Tab.Navigator>
+  );
+}
+
+export default function App() {
+  return (
+    <NavigationContainer>
+      <MyTabs />
+    </NavigationContainer>
+  );
+}

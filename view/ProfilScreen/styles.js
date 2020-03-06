@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
   view2: {
     backgroundColor: '#ffffff',
     marginTop: 8,
-    height: 50,
+    height: '18%',
     justifyContent: 'center',
     marginBottom: 8,
   },
@@ -45,6 +45,12 @@ const styles = StyleSheet.create({
   text3: {
     fontSize: 22,
     marginLeft: 15,
+  },
+  border: {
+    height: '1%',
+    backgroundColor: '#e2e2e2',
+    justifyContent: 'center',
+    width: '90%',
   },
 });
 export default styles;

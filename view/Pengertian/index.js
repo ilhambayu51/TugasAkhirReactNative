@@ -20,7 +20,7 @@ export default class Pengertian extends Component {
           menarik sehingga merangsang timbulnya pengalaman batin manusia saat
           menghayati karya tersebut.
         </Text>
-        <Text style={Styles.title}> Herbert Read</Text>
+        <Text style={Styles.title2}> Herbert Read</Text>
         <Text style={Styles.content}>
           Karya seni lukis merupakan kegiatan rohani yang direfleksikan pada
           jasmani dan mempunyai daya yang bisa membangkitkan jiwa.

@@ -12,6 +12,20 @@ const styles = StyleSheet.create({
     marginTop: '1%',
     paddingLeft: '5%',
   },
+  textstyles5: {
+    color: '#000',
+    fontSize: 20,
+    paddingLeft: '4%',
+    marginLeft: '1%',
+    fontWeight: 'bold',
+  },
+  textstyles6: {
+    fontSize: 16,
+    marginTop: '1%',
+    marginLeft: '1%',
+    paddingLeft: '5%',
+    marginBottom: '2%',
+  },
   Container: {
     backgroundColor: '#fff',
     marginTop: '5%',
@@ -58,7 +72,7 @@ const styles = StyleSheet.create({
   },
   border: {
     backgroundColor: '#e0e0e0',
-    marginTop: '4%',
+    marginTop: '5%',
     height: 2,
     width: 340,
     marginLeft: '7%',
@@ -70,9 +84,10 @@ const styles = StyleSheet.create({
     marginLeft: '3%',
   },
   image3: {
-    width: 200,
-    height: 85,
+    width: 114,
+    height: 54,
     borderRadius: 10,
+    marginEnd: 10,
   },
   card1: {
     alignItems: 'center',

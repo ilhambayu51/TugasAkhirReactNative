@@ -11,6 +11,38 @@ import Fungsi from '../view/Fungsi';
 import Medium from '../view/Medium';
 import Teknik from '../view/Teknik';
 import Latihan from '../view/Latihan';
+import Ujian from '../view/Ujian/index';
+import Login from '../view/Login';
+import Splash from '../view/Splash';
+import Register from '../view/Register';
+import About from '../view/AboutUs';
+import Contact from '../view/Contact';
+
+export const LoginStack = createStackNavigator({
+  Login: {
+    screen: Login,
+    navigationOptions: {
+      header: null,
+    },
+  },
+});
+//digawe 1 stack biar onpress langsung pindah screen
+export const RegisterStack = createStackNavigator({
+  Register: {
+    screen: Register,
+    navigationOptions: {
+      header: null,
+    },
+  },
+});
+export const SplashStack = createStackNavigator({
+  Splash: {
+    screen: Splash,
+    navigationOptions: {
+      header: null,
+    },
+  },
+});
 
 export const ProfilStack = createStackNavigator({
   Profil: {
@@ -19,8 +51,21 @@ export const ProfilStack = createStackNavigator({
       tabBarVisible: true,
     },
   },
+  About: {
+    screen: About,
+    navigationOptions: {
+      tabBarVisible: null,
+      header: true,
+    },
+  },
+  Contact: {
+    screen: Contact,
+    navigationOptions: {
+      tabBarVisible: null,
+      header: true,
+    },
+  },
 });
-
 export const SoalStack = createStackNavigator({
   Soal: {
     screen: Soal,
@@ -30,6 +75,12 @@ export const SoalStack = createStackNavigator({
   },
   Latihan: {
     screen: Latihan,
+    navigationOption: {
+      header: true,
+    },
+  },
+  Ujian: {
+    screen: Ujian,
     navigationOption: {
       header: true,
     },
