@@ -17,12 +17,12 @@ import styles from './styles';
 export default class AboutUs extends Component {
   render() {
     return (
-      <Container>
+      <View>
         <Header style={styles.header}>
           <Left>
             <Button
               transparent
-              onPress={() => this.props.navigation.navigate('First')}>
+              onPress={() => this.props.navigation.navigate('Profil')}>
               <Icon style={{color: 'black'}} name="arrow-back" />
             </Button>
           </Left>
@@ -45,7 +45,7 @@ export default class AboutUs extends Component {
             />
           </View>
         </ScrollView>
-      </Container>
+      </View>
     );
   }
 }

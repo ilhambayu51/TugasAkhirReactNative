@@ -77,6 +77,13 @@ const styles = StyleSheet.create({
     width: 340,
     marginLeft: '7%',
   },
+  border2: {
+    backgroundColor: '#e0e0e0',
+    marginTop: '7%',
+    height: 2,
+    width: 340,
+    marginLeft: '7%',
+  },
   textdirextion: {
     height: 39,
     flexDirection: 'row',

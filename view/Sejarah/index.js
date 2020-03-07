@@ -1,13 +1,17 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, {Component} from 'react';
-import {ScrollView, Text} from 'react-native';
+import {ScrollView, Text, View} from 'react-native';
 import styles from './styles';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 export default class Sejarah extends Component {
   render() {
     return (
       <ScrollView style={{backgroundColor: '#ffffff'}}>
-        <Text style={styles.title}>Zaman Prasejarah</Text>
+        <View style={styles.titleContainer}>
+          <Icon name={'circle'} size={8} style={{marginTop: '3.5%'}} />
+          <Text style={styles.title}>Zaman Prasejarah</Text>
+        </View>
         <Text style={styles.content}>
           Secara historis, seni lukis sangat terkait dengan gambar. Peninggalan
           prasejarah memperlihatkan bahwa ribuan tahun lalu, nenek moyang
@@ -20,7 +24,10 @@ export default class Sejarah extends Component {
           adalah dengan menempelkan tangan di dinding gua, lalu meyemburnya
           dengan kunyahan dedaunan atau batu mineral berwarna.
         </Text>
-        <Text style={styles.title}>Seni Lukis Zaman Klasik</Text>
+        <View style={styles.titleContainer}>
+          <Icon name={'circle'} size={8} style={{marginTop: '3.5%'}} />
+          <Text style={styles.title}>Seni Lukis Zaman Klasik</Text>
+        </View>
         <Text style={styles.content}>
           Kebanyakan dimaksudkan untuk tujuan :
         </Text>
@@ -36,7 +43,10 @@ export default class Sejarah extends Component {
           ilmu pengetahuan dan dimulainya kesadaran bahwa seni lukis mampu
           berkomunikasi lebih baik daripada kata-kata dalam banyak hal.
         </Text>
-        <Text style={styles.title}>Seni Lukis Zaman Pertengahan</Text>
+        <View style={styles.titleContainer}>
+          <Icon name={'circle'} size={8} style={{marginTop: '3.5%'}} />
+          <Text style={styles.title}>Seni Lukis Zaman Pertengahan</Text>
+        </View>
         <Text style={styles.content}>
           Karena terlalu kuatnya pengaruh agama pada zaman pertengahan, seni
           lukis mengalami penjauhan dari ilmu pengetahuan. Ilmu pengetahuan
@@ -54,7 +64,10 @@ export default class Sejarah extends Component {
           perkembangan abstrakisme (pemisahan unsur bentuk yang "benar" dari
           benda).
         </Text>
-        <Text style={styles.title}>Seni lukis zaman Renaissance</Text>
+        <View style={styles.titleContainer}>
+          <Icon name={'circle'} size={8} style={{marginTop: '3.5%'}} />
+          <Text style={styles.title}>Seni Lukis Zaman Renaissance</Text>
+        </View>
         <Text style={styles.content}>
           Berawal dari kota Firenze. Setelah kekalahan dari Turki, banyak sekali
           ilmuwan dan budayawan (termasuk pelukis) yang menyingkir dari
@@ -67,15 +80,18 @@ export default class Sejarah extends Component {
           kembali kekuasaan yang dirampas oleh Turki. Pada akhirnya, pengaruh
           seni di kota Firenze menyebar ke seluruh Eropa hingga Eropa Timur.
         </Text>
-        <Text style={styles.title}>
-          Tokoh yang banyak dikenal dari masa ini adalah :
+        <Text style={styles.title2}>
+          Tokoh yang dikenal dari masa ini adalah :
         </Text>
         <Text style={styles.content}>- Tomassi </Text>
         <Text style={styles.content}>- Donatello</Text>
         <Text style={styles.content}>- Leonardo da Vinci</Text>
         <Text style={styles.content}>- Michaelangelo</Text>
         <Text style={styles.content}>- Raphael</Text>
-        <Text style={styles.title}>Seni Lukis di Indonesia</Text>
+        <View style={styles.titleContainer}>
+          <Icon name={'circle'} size={8} style={{marginTop: '3.5%'}} />
+          <Text style={styles.title}>Seni Lukis di Indonesia</Text>
+        </View>
         <Text style={styles.content}>
           Seni lukis modern mulai dikenal sejak masuknya penjajahan Belanda di
           Indonesia. kecenderungan seni rupa dari Eropa Barat saat itu adalah

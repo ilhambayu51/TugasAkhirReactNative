@@ -29,7 +29,9 @@ export default class Home extends Component {
             Tentang Aplikasi
           </Text>
           <View style={styles.border} />
-          <Text style={styles.text3} onPress={this._OnPress2}>Kontak Kami</Text>
+          <Text style={styles.text3} onPress={this._OnPress2}>
+            Kontak Kami
+          </Text>
         </View>
         <TouchableOpacity style={styles.view3}>
           <Text style={styles.text3}>Keluar</Text>

@@ -2,8 +2,11 @@ import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
   img1: {
-    width: 270,
-    height: 170,
+    width: '60%',
+    height: 200,
+    marginLeft: '7.5%',
+    marginTop: '2%',
+    marginBottom: '2%',
   },
   content: {
     textAlign: 'justify',

@@ -55,8 +55,8 @@ export default class Home extends Component {
         <View
           style={{
             marginLeft: '6.5%',
-            marginTop: '3%',
-            marginBottom: '-2%',
+            marginTop: '2%',
+            marginBottom: '-2.5%',
           }}>
           <ScrollView horizontal={true}>
             <Image
@@ -89,7 +89,7 @@ export default class Home extends Component {
             />
           </ScrollView>
         </View>
-        <View style={styles.border} />
+        <View style={styles.border2} />
         <View style={styles.textdirextion}>
           <Text style={styles.textstyles}>Latihan Soal Yuk!</Text>
           <Text style={styles.textstyles4} onPress={this._onPress2}>

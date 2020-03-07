@@ -7,7 +7,6 @@ import {
   Title,
   Right,
   Button,
-  Text,
   Icon,
   Left,
 } from 'native-base';
@@ -21,7 +20,7 @@ export default class Contact extends Component {
           <Left>
             <Button
               transparent
-              onPress={() => this.props.navigation.navigate('First')}>
+              onPress={() => this.props.navigation.navigate('Profil')}>
               <Icon style={{color: 'black'}} name="arrow-back" />
             </Button>
           </Left>
@@ -37,26 +36,6 @@ export default class Contact extends Component {
               resizeMode="contain"
               style={styles.frame}
             />
-            {/* <Image
-              source={require('../../assets/images/hanif.png')}
-              resizeMode="contain"
-              style={styles.frame}
-            />
-            <Image
-              source={require('../../assets/images/adel.jpg')}
-              resizeMode="contain"
-              style={styles.frame}
-            />
-            <Image
-              source={require('../../assets/images/farah.png')}
-              resizeMode="contain"
-              style={styles.frame}
-            />
-            <Image
-              source={require('../../assets/images/grace.png')}
-              resizeMode="contain"
-              style={styles.frame}
-            /> */}
           </View>
         </ScrollView>
       </Container>

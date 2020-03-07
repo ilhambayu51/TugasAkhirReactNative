@@ -1,29 +1,29 @@
 /* eslint-disable eqeqeq */
 import React, {Component} from 'react';
-import {View, Text, TouchableOpacity} from 'react-native';
+import {ScrollView, View, Text, TouchableOpacity} from 'react-native';
 import {Button} from 'native-base';
 import styles from './styles';
+import quiz from '../../data/Quiz';
 
 export default class Ujian extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      bank: quiz,
       savedAnswer: '',
-      answers: ['manuk', 'menclok', 'nang', 'katok'],
+      answers: quiz,
     };
   }
   _checkAnswer(data) {
     this.setState({savedAnswer: data});
   }
   render() {
+    const dataQuestion = this.state.bank;
+    const dataAnswer = this.state.bank;
     return (
-      <View style={styles.View}>
-        <Text style={styles.text1}>
-          Karya seni lukis merupakan kegiatan rohani yang direfleksikan pada
-          jasmani dan mempunyai daya yang bisa membangkitkan jiwa. Adalah
-          perngertian dari
-        </Text>
-        {this.state.answers.map(data => (
+      <ScrollView style={styles.View}>
+        <Text style={styles.text1}>{dataQuestion.question}</Text>
+        {dataAnswer.answers.map(data => (
           <View style={styles.answerContainer}>
             <TouchableOpacity
               style={
@@ -44,7 +44,7 @@ export default class Ujian extends Component {
             <Text style={styles.text2}>Lanjut</Text>
           </Button>
         </View>
-      </View>
+      </ScrollView>
     );
   }
 }

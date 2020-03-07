@@ -47,10 +47,13 @@ const styles = StyleSheet.create({
     marginLeft: 15,
   },
   border: {
-    height: '1%',
+    height: '1.5%',
     backgroundColor: '#e2e2e2',
-    justifyContent: 'center',
+    alignItems: 'center',
     width: '90%',
+    marginTop: '4%',
+    marginBottom: '4%',
+    marginLeft: '4%',
   },
 });
 export default styles;
